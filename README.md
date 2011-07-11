@@ -5,6 +5,7 @@ This is a simple jQuery plugin that disables the submit button in a form when an
 ## Usage
 
   * Add the `js_required` class to all input elements in the form that must have a non-blank value before the save button can be enabled. E.g.:
+
 ```html
 <input type="text" class="js_required" name="username"/>
 ```
