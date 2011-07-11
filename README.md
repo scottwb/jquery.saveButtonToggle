@@ -10,16 +10,19 @@ This is a simple jQuery plugin that disables the submit button in a form when an
 ```
 
   * Add the `js_save` class to the submit/button element in the form that should be disabled when one or more of the required fields are blank. E.g.:
+
 ```html
 <input type="submit" class="js_save" name="save" value="Save"/>
 ```
 
   * Optional: Add a `progress="..."` attribute to the submit/button element, and when the form is submitted, the button will become disabled and its text will change to the specified text. E.g.:
+
 ```html
 <input type="submit" class="js_save" progress="Saving..." name="save" value="Save"/>
 ```
 
   * Add a javascript call to init a form with this plugin: E.g.:
+
 ```javascript
 $(form_selector).saveButtonToggle();
 ```
