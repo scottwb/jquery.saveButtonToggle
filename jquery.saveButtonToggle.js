@@ -88,6 +88,10 @@
                 setSaveButtonState($this);
             });
 
+            $requiredFields.bind('change.' + PLUGIN_NAME, function() {
+                setSaveButtonState($this);
+            });
+
             var progressText = $saveButton.attr('progress');
             if (progressText) {
                 $this.bind('submit.' + PLUGIN_NAME, function() {
