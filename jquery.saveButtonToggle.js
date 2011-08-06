@@ -102,6 +102,16 @@
             }
 
             setSaveButtonState($this);
+
+            // REVISIT: This little hack aims to catch a change to the
+            //          form made by the browser's autofill, which doesn't
+            //          raise the other events we care about (eg onchange)
+            setTimeout(
+                function() {
+                    setSaveButtonState($this);
+                },
+                500
+            );
         })},
 
         destroy: function() {return this.each(function() {
